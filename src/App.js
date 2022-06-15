@@ -1,25 +1,30 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import Login from './pages/Login/Login'
+import Home from './pages/Home/Home';
 import './App.css';
+import AuthenticationManager from './pages/Login/components/AuthenticationManager';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const auth = new AuthenticationManager();
+  const[login, setLogin] = useState(false)
+  const onLoginSuccess = loginInfo =>{
+    setLogin(loginInfo)
+  }
+  let token = auth.getAccessToken();
+  if(!login && !token){
+    return (
+      <main className="App">
+        <Login onLoginSuccess={onLoginSuccess}/>
+      </main>
+    );
+  }else{
+    return(
+      <main>
+        <Home name={login} /> 
+      </main>
+    )
+  }
+  
 }
 
 export default App;

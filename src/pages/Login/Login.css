@@ -1,0 +1,68 @@
+.login-container {
+    position: relative;
+    top: 200px;
+    padding: 50px 50px;
+    display: block;
+    background-color: #fff;
+    border-radius: 10px;
+    margin-bottom:80px;
+    overflow:hidden;
+    z-index:1;
+}
+.buttons-container{
+    position: relative;
+    top: 20px;
+    padding: 10px;
+}
+.label-error{
+    font-size: 12px;
+    color: red;
+    background: aqua;
+    width: fit-content;
+    height: fit-content;
+    padding: 0 5px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    margin-left: 30px;
+}
+
+.loginButton{
+    cursor: pointer;
+    display: inline-block;
+    width:200px;
+    height:35px;
+    align-items: center;
+    margin-top: -10px;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    text-transform:uppercase;
+    color:white;
+    -webkit-transition:.5s;
+    transition:.5s;
+    border-radius: 3px;
+}
+
+.loginButton:nth-of-type(1){
+    background: #ff5722;
+}
+.loginButton:nth-of-type(2){
+    background: #673ab7;
+}
+.loginButton span{
+    position: absolute;
+    display: block;
+    margin: -10px 20%;
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+.loginButton:hover span{
+    -webkit-transform: translateX(30px);
+	transform: translateX(30px);
+}
+
+.error-create{
+    position: relative;
+    margin: 10px 20px;
+}

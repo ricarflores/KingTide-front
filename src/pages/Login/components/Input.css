@@ -1,0 +1,33 @@
+.input-error {
+    display: block;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+    color:red;
+}
+input{
+    display: block;
+    height: 50px;
+    width: 90%;
+    margin: 0 auto;
+    border: none;
+}
+input::placeholder {
+    -w1ebkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+input:hover, input:focus, input:active:focus {
+    color: dodgerblue;
+	outline: none;
+	border-bottom: 1px solid blue;
+}
+input:hover::placeholder, input:focus::placeholder, input:active:focus::placeholder {
+    color: dodgerblue;
+	position: relative;
+	-webkit-transform: translateY(-20px);
+	transform: translateY(-20px);
+}

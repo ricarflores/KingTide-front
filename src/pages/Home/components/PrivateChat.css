@@ -1,0 +1,11 @@
+select {
+    margin: 10px;
+    width: 100px;
+    height: 20px;
+    padding: 1px 1px 1px 1px;
+    font-size: 15px;
+    border: 1px solid #ccc;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}

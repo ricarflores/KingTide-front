@@ -1,0 +1,11 @@
+.title-container{
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    font-weight:lighter;
+    text-transform:uppercase;
+    color:#414141;
+}
