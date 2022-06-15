@@ -5,8 +5,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 # Dependencies
 
 This project will we works correctly only if the are running the two back end projects
-  - https://github.com/ricarflores/KingTide-Back
-  - https://github.com/ricarflores/KingTide-Socket-Api
+  - [Back-end](https://github.com/ricarflores/KingTide-Back)
+  - [Socket and API](https://github.com/ricarflores/KingTide-Socket-Api)
 
 ## Available Scripts
 
