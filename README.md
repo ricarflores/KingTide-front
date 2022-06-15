@@ -10,7 +10,7 @@ This project will we works correctly only if the are running the two back end pr
 # Install Dependencies
 
 ```sh
-npm i
+npm install
 ```
 
 ## Available Scripts
