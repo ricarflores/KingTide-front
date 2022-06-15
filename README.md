@@ -7,6 +7,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 This project will we works correctly only if the are running the two back end projects
   - [Back-end](https://github.com/ricarflores/KingTide-Back)
   - [Socket and API](https://github.com/ricarflores/KingTide-Socket-Api)
+# Install Dependencies
+
+```sh
+npm i
+```
 
 ## Available Scripts
 
